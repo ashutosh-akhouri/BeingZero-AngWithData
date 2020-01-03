@@ -1,6 +1,30 @@
+
 # Ngwithdata
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+
+
+## Changes for data service
+app.module.ts
+	import { HttpClientModule } from '@angular/common/http';
+	
+	
+	imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule  
+  ]
+  
+
+  
+  ng g s data
+  
+  
+  
+  data.service.ts
+  import {HttpClient} from '@angular/common/http';
+  constructor(private http: HttpClient ) { }  // dependency Injection
+
 
 ## Development server
 
